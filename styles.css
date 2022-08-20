@@ -9,6 +9,7 @@
   --grey: #BABABA;
   --light-grey: #B5B0AC;
   --darker-grey: #757575;
+  --warm-grey: #808080;
   --off-white: #FAF8F7;
   --just-white: #FFFFFF;
 }
@@ -17,11 +18,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'DM Sans', sans-serif;  
 }
 
-html {
-  /* font-size: 62.5%; */
-  font-family: 'DM Sans', sans-serif;  
+/* html{
+  font-size: 62.5%;
+} */
+
+ul {
+  list-style: none;
 }
 
 .header {
@@ -127,8 +132,7 @@ main {
 }
 
 .exchange__slides {
-  margin-top: 48px;
-  list-style: none;
+  margin-top: 48px;  
 }
 
 .exchange__slide-title {
@@ -203,3 +207,196 @@ main {
 .exchange__date--blue {
   background-color: var(--soft-blue);
 }
+
+.product-detail {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  padding: 64px 16px 60px;
+  background-color: var(--black);
+}
+
+.product-detail__icon {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 24px;
+  background-image: url('./assets/icons/batata.svg');
+}
+
+.product-detail__container {
+  width: 90%;
+  min-width: 288px;
+  text-align: center; 
+}
+
+.product-detail__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--just-white) ;
+}
+
+.product-detail__paragraph {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--warm-grey);
+  margin: 24px auto 32px;
+}
+
+.product-detail__card {
+  min-width: 288px;  
+  max-width: 400px;
+  min-height: 152px;
+  margin-bottom: 16px;
+  padding: 14px 20px 22px 16px;
+  background-color: var(--warm-black);
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-detail__card:last-child {
+  margin-bottom: 0;
+}
+
+.product-detail__card-icon {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.product-detail__card:nth-child(1) .product-detail__card-icon {
+  background-image: url('./assets/icons/clock.svg');
+}
+
+.product-detail__card:nth-child(2) .product-detail__card-icon {
+  background-image: url('./assets/icons/eye.svg');
+}
+
+.product-detail__card:nth-child(3) .product-detail__card-icon {
+  background-image: url('./assets/icons/dollar-sign.svg');
+}
+
+.product-detail__card:nth-child(4) .product-detail__card-icon {
+  background-image: url('./assets/icons/check-circle.svg');
+}
+
+.product-detail__card-title {
+  margin-bottom: 10px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: var(--just-white);
+}
+
+.product-detail__card-paragraph {
+  color: var(--warm-grey);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.banner-bitcoin {
+  padding-top: 64px;
+  width: 100%;
+  min-width: 320px;
+  height: 80vh;
+  background: url('./assets/img/bitcoinbaby2x.jpg') center/cover no-repeat;
+}
+
+.banner-bitcoin__title {  
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--just-white);
+  text-align: center;
+}
+
+.plans {
+  width: 100%;
+  min-width: 320px;
+  padding: 64px 0;
+  text-align: center;
+}
+
+.plans__container {
+  padding: 0 15px;
+}
+
+.plans__title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--black);
+}
+
+.plans__paragraph {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: var(--darker-grey);
+  margin: 24px auto 50px;
+}
+
+.plans__slide {
+  position: relative;
+  /* width: 70%;
+  min-width: 230px;
+  max-width: 300px; */
+  width: 190px;
+  height: 247px;
+  background-color: var(--just-white);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  padding: 30px 16px 24px;
+  margin: 0 auto;
+}
+
+.plans__slide-tag {
+  position: absolute;
+  left: 50%;
+  top: -16px;
+  padding: 8px;
+  transform: translateX(-50%);
+  font-size: 0.75rem;
+  color: var(--just-white);
+  background-color: var(--bitcoin-orange);
+  border-radius: 8px;
+}
+
+.plans__slide-title {
+  font-size: 0.875rem;
+}
+
+.plans__slide-price {
+  font-family: 'Inter', sans-serif;
+  font-size: 3.25rem;
+  margin: 5px auto 10px;
+}
+
+.plans__slide-price span {
+  font-size: 0.75rem;
+}
+
+.plans__slide-paragraph {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  line-height: 0.93rem;
+  color: var(--darker-grey);
+  margin-bottom: 16px;
+}
+
+.plans__slide-button {
+  width: 150px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  border: 2px solid var(--bitcoin-orange);
+  border-radius: 4px;
+  padding: 15px;
+}
+
+/* .plans__slide-button span {
+  display: inline-block;
+  margin-left: 12px;
+  width: 24px;
+  height: 24px;
+  background: url('./assets/icons/orange-right-arrow.svg') center/cover no-repeat;
+} */
