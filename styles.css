@@ -1,0 +1,205 @@
+:root {
+  --bitcoin-orange: #F7931A;
+  --orange: #FF9536;
+  --soft-orange: #FFE9D5;
+  --secondary-blue: #1A9AF7;;
+  --soft-blue: #E7F5FF;
+  --warm-black: #282623;
+  --black: #201E1C;
+  --grey: #BABABA;
+  --light-grey: #B5B0AC;
+  --darker-grey: #757575;
+  --off-white: #FAF8F7;
+  --just-white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* font-size: 62.5%; */
+  font-family: 'DM Sans', sans-serif;  
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px;
+  height: 334px;
+  text-align: center;
+  background: linear-gradient(207.8deg, var(--black) 16.69%, var(--bitcoin-orange) 100%);
+}
+
+.header__image {
+  width: 150px;
+  align-self: center;
+}
+
+.header__container {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  align-self: center;
+}
+
+.header__title {
+  margin: 32px auto;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  color: var(--just-white);
+}
+
+.header__paragraph {
+  color: var(--soft-orange);
+}
+
+.header__button {
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 48px;
+  width: 229px;
+  background-color: var(--off-white);
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  color: var(--black);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+}
+
+.header__button::after {
+  content: '';
+  margin-left: 14px;
+  width: 12px;
+  height: 8px;
+  background-image: url('./assets/icons/down-arrow.svg');
+}
+
+main {
+  width: 100%;
+  background-color: var(--off-white);
+  min-width: 320px;
+}
+
+.exchange {
+  padding: 60px 15px;
+}
+
+.exchange__background {
+  width: 195px;
+  height: 195px;
+  margin: 0 auto;
+  background: url('./assets/img/bitcoin.svg') center/cover no-repeat;
+}
+
+.exchange__container {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.exchange__title {
+  margin: 40px auto 24px;
+  font-size: 1.5rem;
+  line-height: 1.625rem;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.exchange__paragraph {  
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 500;
+  color: var(--darker-grey);
+}
+
+.exchange__slides {
+  margin-top: 48px;
+  list-style: none;
+}
+
+.exchange__slide-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.exchange__slide-title--orange {
+  color: var(--orange);
+}
+
+.exchange__grid {
+  max-width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 40px;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--just-white);
+  border-radius: 8px;
+  margin: 12px auto 16px;
+}
+
+.exchange__grid-cell {
+  align-self: center;  
+  padding: 10px 12px;
+  height: 40px;
+  border-bottom: 2px solid var(--off-white);
+}
+
+.exchange__grid-cell:nth-child(odd) {
+  color: var(--light-grey);
+  font-size: 1rem;
+  font-weight: 500;
+  border-right: 2px solid var(--off-white);
+}
+
+.exchange__grid-cell:nth-child(even) {
+  color: var(--darker-grey);
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.exchange__grid-cell > span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  background-size: cover;
+}
+
+.exchange__trending-down {
+  background-image: url('./assets/icons/trending-down.svg');
+}
+
+.exchange__trending-up {
+  background-image: url('./assets/icons/trending-up.svg');
+}
+
+.exchange__date {
+  font-family: 'Inter', sans-serif;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+}
+
+.exchange__date--orange {
+  background-color: var(--soft-orange);
+}
+
+.exchange__date--blue {
+  background-color: var(--soft-blue);
+}
