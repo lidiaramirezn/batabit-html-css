@@ -15,7 +15,7 @@ Aplique conocimientos de:
 ## Analisis con Lighthouse
 
 - Mobile
-![](./assets/img/lighthouse-mobile.png)
+![Mobile](./assets/img/lighthouse-mobile.png)
 
 - Desktop
-![](./assets/img/lighthouse-desktop.png)
+![Desktop](./assets/img/lighthouse-desktop.png)
