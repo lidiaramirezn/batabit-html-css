@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="./assets/icons/batata.svg">
   <title>Bata Bit</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="./assets/icons/batata.svg">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">  
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 712px)">
 </head>
@@ -29,7 +29,7 @@
         <h2 class="exchange__title">Visibilizamos todas las tasas de cambio.</h2>
         <p class="exchange__paragraph">Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
       </div>
-      <ul class="exchange__slides">
+      <ul class="exchange__slider">
         <li class="exchange__slide">
           <h3 class="exchange__slide-title exchange__slide-title--orange">Monedas</h3>
           <div class="exchange__grid">
@@ -104,28 +104,36 @@
       <div class="plans__container">
         <h2 class="plans__title">Escoge el plan que mejor se ajuste a ti.</h2>
         <p class="plans__paragraph">Cualquier plan te da acceso completo a nuestra plataforma.</p>
+      </div>
+      <div class="plans__slider-container">   
+        <!-- <div id="plans-prev" class="plans__button plans__button--prev">
+          <img src="./assets/icons/right-arrow.svg"></img>
+        </div>
+        <div id="plans-next" class="plans__button plans__button--next">
+          <img src="./assets/icons/right-arrow.svg"></img>     
+        </div> -->
+        <ul class="plans__slider" id="slider-plans">          
+          <li class="plans__slide">
+            <h3 class="plans__slide-title">Pago Anual</h3>
+            <p class="plans__slide-price"><span>$</span>5</p>
+            <p class="plans__slide-paragraph">*Plan básico para mantenerte informado</p>
+            <button class="plans__slide-button">Escoger este <span></span></button>
+          </li>
+          <li class="plans__slide">
+            <p  class="plans__slide-tag">Recomendado</p>
+            <h3 class="plans__slide-title">Pago Anual</h3>
+            <p class="plans__slide-price"><span>$</span>49</p>
+            <p class="plans__slide-paragraph">*Ahorras $129 comparado al plan mensual.</p>
+            <button class="plans__slide-button">Escoger este <span></span></button>
+          </li>
+          <li class="plans__slide">
+            <h3 class="plans__slide-title">Pago Anual</h3>
+            <p class="plans__slide-price"><span>$</span>99</p>
+            <p class="plans__slide-paragraph">*Ahorras $999+ comparado al plan anual.</p>
+            <button class="plans__slide-button">Escoger este <span></span></button>
+          </li>
+        </ul>
       </div>      
-      <ul class="plans__slider">
-        <li class="plans__slide">
-          <h3 class="plans__slide-title">Pago Anual</h3>
-          <p class="plans__slide-price"><span>$</span>5</p>
-          <p class="plans__slide-paragraph">*Plan básico para mantenerte informado</p>
-          <button class="plans__slide-button">Escoger este <span></span></button>
-        </li>
-        <li class="plans__slide">
-          <p  class="plans__slide-tag">Recomendado</p>
-          <h3 class="plans__slide-title">Pago Anual</h3>
-          <p class="plans__slide-price"><span>$</span>49</p>
-          <p class="plans__slide-paragraph">*Ahorras $129 comparado al plan mensual.</p>
-          <button class="plans__slide-button">Escoger este <span></span></button>
-        </li>
-        <li class="plans__slide">
-          <h3 class="plans__slide-title">Pago Anual</h3>
-          <p class="plans__slide-price"><span>$</span>99</p>
-          <p class="plans__slide-paragraph">*Ahorras $999+ comparado al plan anual.</p>
-          <button class="plans__slide-button">Escoger este <span></span></button>
-        </li>
-      </ul>
     </section>
   </main>
 

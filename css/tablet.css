@@ -1,25 +1,55 @@
+.header {
+  height: auto;
+  padding: 100px 0;
+}
+
 .header__title {
   font-size: 2.5rem;
   line-height: 2.625rem;
+  margin-top: 40px ;
+  max-width: 460px;
 }
 
 .header__paragraph {
   font-size: 1.25rem;
   line-height: 1.5rem;
+  max-width: 380px;
+  margin: 0 auto;
 }
 
 .exchange__title { 
   font-size: 2.5rem;
   line-height: 2.625rem;
+  width: 460px;
 }
 
 .exchange__paragraph {
+  width: 466px;
   font-size: 1.25rem;
   line-height: 1.5rem;
+  margin: 0 auto;
+}
+
+.exchange__slider {
+  overflow: auto;
+  justify-content: center;
+  gap: 30px;
+}
+
+.product-detail {
+  padding: 64px 0;
 }
 
 .product-detail__title {
   font-size: 2.5rem;
+  width: 466px;
+  margin: 0 auto;
+}
+
+.product-detail__icon {
+  top: -25px;
+  width: 80px;
+  height: 50px;
 }
 
 .product-detail__paragraph {
@@ -34,8 +64,16 @@
   margin: 0 auto;
 }
 
+.product-detail__card {
+  height: 168px;
+}
+
+.product-detail__card:nth-child(odd) {
+  margin-right: 10px;
+}
+
 .banner-bitcoin {
-  height: 30vh;
+  height: 35vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,14 +84,22 @@
   font-size: 2.5rem;  
 }
 
+.plans {
+  padding-top: 80px;
+}
+
 .plans__title {
   font-size: 2.5rem;
   line-height: 2.625rem;
+  width: 466px;
+  margin: 0 auto;
 }
 
 .plans__paragraph {
   font-size: 1.25rem;
   line-height: 1.5rem;
+  width: 466px;
+  margin: 24px auto 0;
 }
 
 .plans__slider {
@@ -79,4 +125,5 @@
 
 .footer img {
   width: 165px;
+  height: 110px;
 }

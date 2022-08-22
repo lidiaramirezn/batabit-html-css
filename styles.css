@@ -43,11 +43,11 @@ ul {
 
 .header__image {
   width: 150px;
+  height: 24px;
   align-self: center;
 }
 
 .header__container {
-  width: 90%;
   min-width: 288px;
   max-width: 900px;
   align-self: center;
@@ -133,8 +133,18 @@ main {
   color: var(--darker-grey);
 }
 
-.exchange__slides {
-  margin-top: 48px;  
+.exchange__slider {
+  margin-top: 48px;
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain ;
+  scroll-snap-type: x proximity;
+  gap: 10px;
+}
+
+.exchange__slide {
+  min-width: 280px;
+  scroll-snap-align: center;
 }
 
 .exchange__slide-title {
@@ -220,7 +230,7 @@ main {
   position: relative;
   width: 100%;
   min-width: 320px;
-  padding: 64px 16px 60px;
+  padding: 64px 15px 60px;
   background-color: var(--black);
 }
 
@@ -231,11 +241,10 @@ main {
   transform: translateX(-50%);
   width: 40px;
   height: 24px;
-  background-image: url('./assets/icons/batata.svg');
+  background: url('./assets/icons/batata.svg') center/cover no-repeat;
 }
 
 .product-detail__container {
-  width: 90%;
   min-width: 288px;
   text-align: center; 
 }
@@ -309,7 +318,7 @@ main {
   width: 100%;
   min-width: 320px;
   height: 80vh;
-  background: url('./assets/img/bitcoinbaby2x.jpg') center/cover no-repeat;
+  background: url('./assets/img/bitcoinbaby2x.webp') center/cover no-repeat;
 }
 
 .banner-bitcoin__title {  
@@ -344,7 +353,7 @@ main {
   margin-top: 24px;
 }
 
-.plans__slider {
+.plans__slider {  
   display: flex;
   overflow-x: scroll;
   overscroll-behavior-x: contain ;
@@ -354,12 +363,34 @@ main {
   padding-bottom: 64px;
 }
 
+.plans__slider-container {
+  position: relative;
+}
+
+.plans__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+}
+
+.plans__button--next {
+  transform: translateY(-50%);
+}
+
+.plans__button--prev {
+  left: 30px;
+  transform: translateY(-50%) rotate(180deg);
+}
+
 .plans__slide {
   position: relative;
   scroll-snap-align: center;
-  /* width: 70%;
-  min-width: 230px;
-  max-width: 300px; */
   min-width: 190px;
   height: 247px;
   background-color: var(--just-white);
@@ -393,6 +424,7 @@ main {
 
 .plans__slide-price span {
   font-size: 0.75rem;
+  vertical-align: middle;
 }
 
 .plans__slide-paragraph {
@@ -429,6 +461,11 @@ main {
   padding: 40px 65px;
   width: 100%;
   background-color: var(--bitcoin-orange);
+}
+
+.footer img {
+  width: 75px;
+  height: 50px;
 }
 
 .footer a {
